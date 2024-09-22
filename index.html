@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Todo List</title>
+
+	<link rel="stylesheet" href="main.css">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,700;0,900;1,400&family=Montserrat:ital,wght@0,400;0,700;0,900;1,400&display=swap"
+		rel="stylesheet">
+
+</head>
+
+<body>
+
+	<main class="app">
+
+		<section class="greeting">
+			<h1 class="title">What's up,
+				<input type="text" id="name" placeholder="Your Name" required />
+			</h1>
+		</section>
+
+		<section class="create-todo">
+			<h2>CREATE A TO DO</h2>
+			<form id="new-todo-form">
+				<label for="content">
+					<h3>What's on your to do?</h3>
+				</label>
+				<input type="text" placeholder="e.g. - get some grocery" name="content" id="content" required />
+
+				<h3>Pick a category</h3>
+				<div class="options">
+					<label>
+						<input type="radio" name="category" id="category1" value="personal" required />
+						<span class="bubble personal"></span>
+						<div>Personal</div>
+					</label>
+					<label>
+						<input type="radio" name="category" id="category2" value="business" required />
+						<span class="bubble business"></span>
+						<div>Business</div>
+					</label>
+				</div>
+
+				<input type="submit" value="Add to do" />
+			</form>
+		</section>
+
+		<section class="todo-list">
+			<h2>TO DO LIST</h2>
+			<div class="list" id="todo-list"></div>
+		</section>
+
+	</main>
+
+	<footer class="footer">
+		<p>Code by <a href="https://github.com/VikasSaxena2204" target="_blank"
+				rel="noopener noreferrer">@VikasSaxena2204</a></p>
+	</footer>
+
+	<script src="main.js"></script>
+
+</body>
+
+</html>
